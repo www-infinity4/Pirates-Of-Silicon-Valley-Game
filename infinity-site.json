@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "siteId": "PIRATES-SILICON-VALLEY",
+  "title": "Pirates of Silicon Valley — Interactive Computer Lab",
+  "type": "game",
+  "framework": "static-html",
+  "canonical": "https://www-infinity4.github.io/Pirates-Of-Silicon-Valley-Game/",
+  "entry": "index.html",
+  "mobileFirst": true,
+  "share": {"enabled": true, "webShare": true, "fallback": "x-intent"},
+  "preview": {"enabled": true, "path": "share-preview.svg", "target": "1200x630"},
+  "wallet": {"centralized": true},
+  "game": {"levels": 10, "missions": 100, "interactiveHotspots": 12},
+  "scanner": {"expectedStatus": "green"}
+}
