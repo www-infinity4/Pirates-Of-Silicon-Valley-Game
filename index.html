@@ -62,6 +62,26 @@
       </aside>
     </section>
 
+    <section class="soundtrack-card" aria-labelledby="soundtrackTitle">
+      <div class="soundtrack-copy">
+        <p class="eyebrow">OPTIONAL SCENE SOUNDTRACK</p>
+        <h2 id="soundtrackTitle">American Woman — The Guess Who</h2>
+        <p><b id="trackStep">Step 1 of 10</b> <span aria-hidden="true">•</span> <span id="trackName">American Woman</span></p>
+        <p id="trackReason">The finished-product reveal begins with a bold, unmistakable entrance.</p>
+        <div class="music-actions">
+          <button class="primary" id="musicPlay" type="button">▶ Play scene song</button>
+          <button id="musicStop" type="button" disabled>Stop</button>
+          <a id="musicOpen" href="https://www.youtube.com/watch?v=9uf6EY2BZBw" target="_blank" rel="noopener">Open song on YouTube ↗</a>
+          <a href="https://www.youtube.com/playlist?list=PLxI026RWVNlfJekaWCGlIsCi1AHDHPK6H" target="_blank" rel="noopener">Open album playlist ↗</a>
+        </div>
+        <small>Playback starts only when you tap Play. Songs are streamed by YouTube and may vary by region; music never affects answers, XP or Easter eggs.</small>
+      </div>
+      <div class="music-player" id="musicPlayerWrap">
+        <div id="musicPlaceholder"><span>♪</span><b>Tap Play for this scene’s song</b></div>
+        <iframe id="musicPlayer" title="Scene soundtrack player" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
     <section class="movie-card" id="movie">
       <div>
         <p class="eyebrow">WATCH THE STORY SKELETON</p>

@@ -12,5 +12,6 @@
   "wallet": {"centralized": true},
   "game": {"levels": 10, "plannedMissions": 100, "publishedMissions": 10, "interactiveHotspotsPerScene": 12, "easterEggsPerScene": 2},
   "movie": {"hostedLocally": false, "youtube": "https://www.youtube.com/watch?v=BI-nzUIYIX4", "availabilityMayChange": true},
+  "soundtrack": {"hostedLocally": false, "source": "YouTube", "album": "American Woman", "artist": "The Guess Who", "sceneCues": 10, "userInitiated": true, "affectsGameplay": false},
   "scanner": {"expectedStatus": "green"}
 }
