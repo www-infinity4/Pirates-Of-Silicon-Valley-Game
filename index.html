@@ -1,1 +1,90 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pirates of Silicon Valley | Interactive Computer Lab</title><meta name="description" content="Build computers, solve electronics missions, make business connections and advance through ten eras of Silicon Valley."><link rel="canonical" href="https://www-infinity4.github.io/Pirates-Of-Silicon-Valley-Game/"><meta property="og:type" content="website"><meta property="og:title" content="Pirates of Silicon Valley | Interactive Computer Lab"><meta property="og:description" content="100 technical missions across ten eras of computer building."><meta property="og:url" content="https://www-infinity4.github.io/Pirates-Of-Silicon-Valley-Game/"><meta property="og:image" content="https://www-infinity4.github.io/Pirates-Of-Silicon-Valley-Game/share-preview.svg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Pirates of Silicon Valley | Interactive Computer Lab"><meta name="twitter:description" content="Build the machine. Wire the board. Make the deal."><meta name="twitter:image" content="https://www-infinity4.github.io/Pirates-Of-Silicon-Valley-Game/share-preview.svg"><link rel="stylesheet" href="styles.css"></head><body><header><div><b>PIRATES OF SILICON VALLEY</b><small>Interactive Computer Lab • Infinity ® 2026</small></div><div class="stats"><span id="level">LEVEL 1</span><span id="score">0 XP</span></div></header><main><section class="hero"><div><p class="eyebrow">GARAGE → GLOBAL NETWORK</p><h1>Build the computer revolution.</h1><p>Explore each scene. Tap the correct hardware, documents and connections to complete technical missions.</p></div><div class="progress"><span id="era">Garage Electronics</span><div><i id="bar"></i></div><small id="missionCount">Mission 1 / 100</small></div></section><section class="game"><div class="scene" id="scene"><div class="sceneTitle"><b id="sceneName">The Garage Bench</b><span id="year">1976</span></div><div class="board" id="board"></div></div><aside><p class="eyebrow">CURRENT MISSION</p><h2 id="question"></h2><p id="lesson"></p><div id="answers"></div><div id="feedback" aria-live="polite"></div><button id="next" disabled>Next mission →</button></aside></section><section class="curriculum"><h2>10-level technical campaign</h2><div id="levels"></div></section></main><footer><button id="share">Share / Post</button><span>Electronics • computing • networking • engineering • business</span></footer><script src="game.js"></script><script src="https://www-infinity4.github.io/Mint-For-Infinity/unified-wallet.js?v=20260831-game-rewards1" defer></script><script src="https://www-infinity4.github.io/Mint-For-Infinity/site-community.js?v=20260831-storage2" data-site-id="PIRATES-SILICON-VALLEY" data-site-title="Pirates of Silicon Valley" data-share-url="https://www-infinity4.github.io/Pirates-Of-Silicon-Valley-Game/" defer></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Pirates of Silicon Valley | Infinity Interactive Lab</title>
+  <meta name="description" content="Enter ten illustrated computer-history scenes, inspect real components, discover harmless Easter eggs and solve practical Infinity design missions.">
+  <link rel="canonical" href="https://www-infinity4.github.io/Pirates-Of-Silicon-Valley-Game/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pirates of Silicon Valley | Infinity Interactive Lab">
+  <meta property="og:description" content="Build the machine. Debug the circuit. Design Infinity. Make the deal.">
+  <meta property="og:url" content="https://www-infinity4.github.io/Pirates-Of-Silicon-Valley-Game/">
+  <meta property="og:image" content="https://www-infinity4.github.io/Pirates-Of-Silicon-Valley-Game/scenes/01-infinity-commercial-vision.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pirates of Silicon Valley | Infinity Interactive Lab">
+  <meta name="twitter:description" content="Ten playable scenes with real computer-building decisions.">
+  <meta name="twitter:image" content="https://www-infinity4.github.io/Pirates-Of-Silicon-Valley-Game/scenes/01-infinity-commercial-vision.webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#game"><b>PIRATES OF SILICON VALLEY</b><small>Infinity Interactive Lab • 2026</small></a>
+    <div class="stats" aria-label="Game progress"><span id="missionCount">1 / 10</span><span id="score">0 XP</span></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">MOVIE HISTORY → REAL-WORLD DESIGN</p>
+        <h1>Build the computer revolution.</h1>
+        <p>Explore every object. Main targets advance the work. Hidden Easter eggs reveal jokes and museum notes without affecting inventory, answers, progress or score.</p>
+      </div>
+      <div class="progress" aria-label="Campaign progress"><span id="era">The Infinity Commercial</span><div><i id="bar"></i></div><small>Scenes 1–10 • first playable layer</small></div>
+    </section>
+
+    <section class="game" id="game">
+      <div class="scene-card">
+        <div class="scene-title"><div><b id="sceneName"></b><small id="year"></small></div><button id="hint" type="button">Show touch areas</button></div>
+        <div class="scene" id="scene">
+          <img id="sceneImage" alt="" draggable="false">
+          <div id="hotspots"></div>
+          <div id="toast" role="status" aria-live="polite"></div>
+        </div>
+        <div class="scene-tools">
+          <button id="previous" type="button">← Previous</button>
+          <button id="inspectAll" type="button">Room checklist</button>
+          <button id="nextScene" type="button" disabled>Next scene →</button>
+        </div>
+      </div>
+
+      <aside class="mission-panel">
+        <p class="eyebrow">CURRENT WORK MISSION</p>
+        <h2 id="question"></h2>
+        <p id="brief"></p>
+        <p class="instruction" id="instruction">Inspect the image and tap the required object.</p>
+        <div id="answers" class="answers"></div>
+        <div id="feedback" aria-live="polite"></div>
+        <label class="design-note">Your engineering note
+          <textarea id="playerNote" maxlength="800" placeholder="Describe your own design, repair or negotiation idea…"></textarea>
+        </label>
+        <button id="saveNote" type="button">Save note to this scene</button>
+      </aside>
+    </section>
+
+    <section class="movie-card" id="movie">
+      <div>
+        <p class="eyebrow">WATCH THE STORY SKELETON</p>
+        <h2>Pirates of Silicon Valley</h2>
+        <p>The game uses the 1999 film’s shifting timeline as a historical skeleton, then turns its scenes into original engineering, design and business work. YouTube availability and price can change by country or account.</p>
+        <div class="movie-actions">
+          <a class="primary" href="https://www.youtube.com/watch?v=BI-nzUIYIX4" target="_blank" rel="noopener">Watch movie on YouTube ↗</a>
+          <a href="https://www.youtube.com/watch?v=nzJLmcGfMag" target="_blank" rel="noopener">Watch trailer ↗</a>
+        </div>
+      </div>
+      <div class="trailer"><iframe src="https://www.youtube-nocookie.com/embed/nzJLmcGfMag" title="Pirates of Silicon Valley trailer" loading="lazy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </section>
+
+    <section class="curriculum">
+      <p class="eyebrow">SCENES 1–10</p>
+      <h2>The first working campaign</h2>
+      <div id="sceneList"></div>
+    </section>
+  </main>
+
+  <footer><button id="share" type="button">Share / Post</button><span>Acting • electronics • AI design • interfaces • manufacturing • licensing</span></footer>
+  <script src="game.js"></script>
+  <script src="https://www-infinity4.github.io/Mint-For-Infinity/unified-wallet.js?v=20260831-game-rewards1" defer></script>
+  <script src="https://www-infinity4.github.io/Mint-For-Infinity/site-community.js?v=20260831-storage2" data-site-id="PIRATES-SILICON-VALLEY" data-site-title="Pirates of Silicon Valley" data-share-url="https://www-infinity4.github.io/Pirates-Of-Silicon-Valley-Game/" defer></script>
+</body>
+</html>
