@@ -8,7 +8,7 @@
   "entry": "index.html",
   "mobileFirst": true,
   "share": {"enabled": true, "webShare": true, "fallback": "x-intent"},
-  "preview": {"enabled": true, "path": "scenes/01-infinity-commercial-vision.webp", "target": "1672x941"},
+  "preview": {"enabled": true, "path": "scenes/01-infinity-commercial-vision.png", "target": "1672x941", "mimeType": "image/png"},
   "wallet": {"centralized": true},
   "game": {"levels": 10, "plannedMissions": 100, "publishedMissions": 10, "interactiveHotspotsPerScene": 12, "easterEggsPerScene": 2},
   "movie": {"hostedLocally": false, "youtube": "https://www.youtube.com/watch?v=BI-nzUIYIX4", "availabilityMayChange": true},
